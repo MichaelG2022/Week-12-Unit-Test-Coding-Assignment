@@ -72,7 +72,7 @@ class TestDemoTest {
 
 	// Uses Mockito to Spy on TestDemo method getRandomInt to mock in a 5 and assert that 5 squared (25) is returned.
 	@Test
-	public void assertThatNumberSquaredIsCorrect() {
+	void assertThatNumberSquaredIsCorrect() {
 		TestDemo mockDemo = spy(testDemo);
 
 		doReturn(5).when(mockDemo).getRandomInt();
